@@ -964,7 +964,7 @@ def get_minion_python_executable(options):
             else:
                 python_executable = '/usr/bin/python3'
         if options.windows:
-            python_executable = '"{0}"'.format(python_executable)
+            python_executable = 'C:\\Python27\\python.exe'
         setattr(options, 'minion_python_executable', python_executable)
         save_state(options)
         return python_executable
